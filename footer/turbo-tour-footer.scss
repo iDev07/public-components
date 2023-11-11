@@ -1,0 +1,134 @@
+.footer {
+  .footer_wrapper {
+    margin-top: 100px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    .this_wrap {
+      @media (max-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        .motto {
+          width: 50%;
+        }
+      }
+      display: grid;
+      grid-template-columns: 15% 20% 15% 15% 20% 15%;
+      align-items: center;
+      .logo {
+        img {
+          width: 150px;
+        }
+      }
+      .motto {
+        padding: 0 10px;
+        p {
+          color: #004074;
+          text-align: center;
+          @media (max-width: 768px) {
+            font-size: 15px;
+          }
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+        }
+      }
+      .links {
+        text-align: center;
+        ul {
+          padding-left: 0;
+          li {
+            list-style-type: none;
+            color: #004074;
+            text-align: center;
+            transition: 0.3s ease;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            &:hover {
+              color: #000;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+      .contacts {
+        text-align: center;
+        ul {
+          padding-left: 0;
+          li {
+            list-style-type: none;
+            color: #004074;
+            text-align: center;
+            transition: 0.3s ease;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            &:hover {
+              color: #000;
+            }
+          }
+        }
+      }
+      .payments {
+        text-align: center;
+        cursor: pointer;
+        h3 {
+          // margin-bottom: 10px;
+        }
+        .payment_wrap {
+          border-radius: 10px;
+          background: #fff;
+          box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1);
+          display: grid;
+          grid-template-columns: 50% 50%;
+          flex-wrap: wrap;
+          padding: 5px;
+          margin-left: 10px;
+          /* margin-top: 20px; */
+          margin-right: 10px;
+          margin-bottom: -30px;
+          .col {
+            img {
+              width: 60px;
+              height: 30px;
+              object-fit: contain;
+            }
+          }
+        }
+      }
+      .social_newtworks {
+        .intro {
+          margin-bottom: 20px;
+        }
+        h3 {
+        }
+        ul {
+          display: flex;
+          justify-content: space-around;
+          position: relative;
+          li {
+            transition: 0.3s ease;
+            list-style: none;
+            margin-bottom: -20px;
+            &:hover {
+              transform: translateY(-5px);
+            }
+          }
+        }
+      }
+    }
+    .copyright {
+      padding-top: 40px;
+      text-align: center;
+      font-size: 18px;
+      a {
+        color: #004074;
+      }
+    }
+  }
+}
